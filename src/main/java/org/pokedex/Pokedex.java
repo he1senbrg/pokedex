@@ -176,6 +176,8 @@ class RoundedProgressBar extends JProgressBar {
         setStringPainted(true);
         setForeground(Color.decode("#BA263E"));
         setBackground(Color.decode("#000000"));
+        setMaximum(255);
+        setMinimum(0);
     }
 
     protected void paintComponent(Graphics g) {
